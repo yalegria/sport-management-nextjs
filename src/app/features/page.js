@@ -1,9 +1,7 @@
-// src/app/page.js
-import Link from "next/link";
-import Image from "next/image";
+// src/app/features/page.js
+import Link from 'next/link';
 
-
-export default function Home() {
+export default function Features() {
   return (
     <div>
       <header>
@@ -15,24 +13,10 @@ export default function Home() {
           <Link href="/contact">Contact</Link>
         </nav>
         <h1>Sports Management</h1>
-        <p>Making Sports Easier for Everyone</p>
       </header>
 
       <main>
-        <section id="hero">
-          <div className="container">
-            <h1>Empower Your Team. Simplify Your Life.</h1>
-            <p>
-              Experience the future of sports management with Sports Management.
-              Our all-in-one platform streamlines scheduling, communication, and
-              administration, giving you more time to focus on what matters most -
-              the game.
-            </p>
-            <Link href="/features" className="btn">Explore Features</Link>
-          </div>
-        </section>
-
-        <section id="index-features">
+        <section id="features">
           <div className="container">
             <h2 id="pow-feat">Powerful Features</h2>
             <div className="feature-grid">
@@ -41,35 +25,44 @@ export default function Home() {
                 <h3>Effortless Scheduling</h3>
                 <p>Create and manage schedules, send reminders, and generate reports with ease.</p>
               </div>
-              <div className="feature-item">
+              {/*<div className="feature-item">
                 <i className="fa-solid fa-bullhorn"></i>
                 <h3>Seamless Communication</h3>
                 <p>Connect with players, parents, and coaches through integrated messaging and announcements.</p>
-              </div>
+              </div>*/}
+              {/*<div className="feature-item">
+                <i className="fa-solid fa-id-card"></i>
+                <h3>Streamlined Registration</h3>
+                <p>Streamline registration and payment processing with our secure online platform.</p>
+              </div>*/}
               <div className="feature-item">
                 <i className="fa-regular fa-window-restore"></i>
                 <h3>Built-In Websites</h3>
-                <p>Recieve your own personally made website template for leagues, clubs, and teams.</p>
+                <p>Get your own made website template for leagues, clubs, and teams.</p>
+              </div>
+              <div className="feature-item">
+                <i className="fa-solid fa-hand-holding-dollar"></i>
+                <h3>Affordable Subscriptions</h3>
+                <p>Prices starting at $10 a month with our basic plan.</p>
+              </div>
+              <div className="feature-item">
+                <i className="fa-solid fa-user-check"></i>
+                <h3>User Friendly</h3>
+                <p>Our platform is easy to use with no headaches or problems to worry about.</p>
+              </div>
+              <div className="feature-item">
+                <i className="fa-solid fa-computer-mouse"></i>
+                <h3>Fast Inputs and Outputs</h3>
+                <p>Takes seconds to insert data like scores and stats, and takes less to show up on the front-end.</p>
+              </div>
+              <div className="feature-item">
+                <i className="fa-solid fa-brain"></i>
+                <h3>Problem Solving App</h3>
+                <p>Helps solve problems, coaches, managers, etc, face when building a soccer brand.</p>
               </div>
             </div>
           </div>
         </section>
-        {/*
-        <section id="testimonials">
-          <div className="container">
-            <h2 id="reviews">What Our Customers Say</h2>
-            <div className="testimonial-slider">
-              <div className="testimonial">
-                <p>
-                  "Sports Management has saved us countless hours and headaches.
-                  It's incredibly user-friendly and has significantly improved
-                  our team's communication."
-                </p>
-                <p>- John Doe, Coach</p>
-              </div>
-            </div>
-          </div>
-        </section>*/}
       </main>
 
       <footer>
